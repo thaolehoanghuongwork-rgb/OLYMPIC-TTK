@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bản Tin - Olympic Toán - Thống Kê 2025</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        themeBg: '#F9F8FD',
+                        themePurple: '#8B5CF6',
+                        themeBanner: '#E6E1FA',
+                        themeDark: '#2D1537',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #F9F8FD;
+            font-family: 'Montserrat', sans-serif;
+            color: #333333;
+        }
+        /* Custom image hover transition */
+        .gallery-card {
+            overflow: hidden;
+            border-radius: 6px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        .gallery-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(139, 92, 246, 0.2);
+        }
+        .gallery-img {
+            transition: transform 0.5s ease;
+        }
+        .gallery-card:hover .gallery-img {
+            transform: scale(1.06);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between">
+
+    <!-- Header Navigation -->
+    <header class="w-full bg-[#F9F8FD] py-4 px-6 md:px-12 sticky top-0 z-40 backdrop-blur-md bg-opacity-90 transition-all border-b border-purple-50">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <!-- Logo Section -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="relative w-11 h-11 flex items-center justify-center">
+                    <!-- SVG Logo matching Olympic Toán - Thống Kê style -->
+                    <svg viewBox="0 0 100 100" class="w-full h-full transform group-hover:rotate-12 transition-transform duration-300">
+                        <circle cx="50" cy="50" r="42" fill="none" stroke="#F59E0B" stroke-width="6"/>
+                        <circle cx="50" cy="50" r="30" fill="none" stroke="#8B5CF6" stroke-width="4" stroke-dasharray="8 4"/>
+                        <path d="M50 15 L50 85 M15 50 L85 50 M25 25 L75 75 M25 75 L75 25" stroke="#7C3AED" stroke-width="4" stroke-linecap="round"/>
+                        <polygon points="50,20 60,40 80,50 60,60 50,80 40,60 20,50 40,40" fill="#8B5CF6"/>
+                    </svg>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl md:text-2xl font-black tracking-wider text-black leading-none flex items-center">
+                        <span class="text-yellow-500 mr-1">X</span>LYMPIC
+                    </span>
+                    <span class="text-[9px] md:text-[10px] font-bold text-gray-800 tracking-widest mt-0.5 uppercase">
+                        Toán - Thống Kê
+                    </span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Menu -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-gray-700">
+                <a href="#" class="hover:text-purple-600 transition-colors">Fanpage</a>
+                <a href="#" class="hover:text-purple-600 transition-colors">Thông tin</a>
+                <a href="#" class="hover:text-purple-600 transition-colors">Liên hệ</a>
+                <a href="#" class="hover:text-purple-600 transition-colors">Đơn vị</a>
+                <a href="#" class="text-purple-700 font-bold relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-0.5 after:bg-purple-600">Bản tin</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none p-2" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden max-w-6xl mx-auto pt-4 pb-2 px-2 flex flex-col space-y-3 font-semibold text-gray-700 text-sm">
+            <a href="#" class="py-1 hover:text-purple-600">Fanpage</a>
+            <a href="#" class="py-1 hover:text-purple-600">Thông tin</a>
+            <a href="#" class="py-1 hover:text-purple-600">Liên hệ</a>
+            <a href="#" class="py-1 hover:text-purple-600">Đơn vị</a>
+            <a href="#" class="py-1 text-purple-700 font-bold">Bản tin</a>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow max-w-5xl w-full mx-auto px-4 py-8 md:py-12">
+        
+        <!-- Header Titles -->
+        <div class="text-center space-y-2 mb-8">
+            <h1 class="text-xl md:text-2xl font-bold tracking-wider text-gray-800 uppercase">
+                KHÔNG GIAN ẢNH
+            </h1>
+            <p class="text-sm md:text-base font-bold text-gray-700 tracking-wide uppercase">
+                CUỘC THI OLYMPIC TOÁN - THỐNG KÊ NĂM 2025
+            </p>
+        </div>
+
+        <!-- Lavender Banner Section Header -->
+        <div class="w-full bg-[#E8E1F8] py-4 px-6 rounded-md mb-8 text-center shadow-sm">
+            <h2 class="text-base md:text-xl font-bold text-gray-800 tracking-wide uppercase">
+                BOOTH TRUYỀN THÔNG “PLAYING WITH MATH”
+            </h2>
+        </div>
+
+        <!-- Gallery Grid (3x3 Layout) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-6">
+            
+            <!-- Image Item 1 -->
+            <div class="gallery-card cursor-pointer group relative bg-gray-200 aspect-[4/3]" onclick="openLightbox(0)">
+                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80" 
+                     alt="Booth laptop and information board" 
+                     class="gallery-img w-full h-full object-cover">
+                <div class="absolute inset-0 bg-purple-900 bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                    <i class="fa-solid fa-magnifying-glass-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+                </div>
+            </div>
+
+            <!-- Image Item 2 -->
+            <div class="gallery-card cursor-pointer group relative bg-gray-200 aspect-[4/3]" onclick="openLightbox(1)">
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" 
+                     alt="Olympic Math banner and booth setup" 
+                     class="gallery-img w-full h-full object-cover">
+                <div class="absolute inset-0 bg-purple-900 bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                    <i class="fa-solid fa-magnifying-glass-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+                </div>
+            </div>
+
+            <!-- Image Item 3 -->
+            <div class="gallery-card cursor-pointer group relative bg-gray-200 aspect-[4/3]" onclick="openLightbox(2)">
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80" 
+                     alt="Wooden blocks with TTK letters" 
+                     class="gallery-img w-full h-full object-cover">
+                <div class="absolute inset-0 bg-purple-900 bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                    <i class="fa-solid fa-magnifying-glass-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+                </div>
+            </div>
+
+            <!-- Image Item 4 -->
+            <div class="gallery-card cursor-pointer group relative bg-gray-200 aspect-[4/3]" onclick="openLightbox(3)">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" 
+                     alt="Math game props and souvenirs on table" 
+                     class="gallery-img w-full h-full object-cover">
+                <div class="absolute inset-0 bg-purple-900 bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                    <i class="fa-solid fa-magnifying-glass-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+                </div>
+            </div>
+
+            <!-- Image Item 5 -->
+            <div class="gallery-card cursor-pointer group relative bg-gray-200 aspect-[4/3]" onclick="openLightbox(4)">
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" 
+                     alt="Students interacting at the event booth" 
+                     class="gallery-img w-full h-full object-cover">
+                <div class="absolute inset-0 bg-purple-900 bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                    <i class="fa-solid fa-magnifying-glass-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+                </div>
+            </div>
+
+            <!-- Image Item 6 -->
+            <div class="gallery-card cursor-pointer group relative bg-gray-200 aspect-[4/3]" onclick="openLightbox(5)">
+                <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&q=80" 
+                     alt="Students solving paper geometric puzzles" 
+                     class="gallery-img w-full h-full object-cover">
+                <div class="absolute inset-0 bg-purple-900 bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                    <i class="fa-solid fa-magnifying-glass-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+                </div>
+            </div>
+
+            <!-- Image Item 7 -->
+            <div class="gallery-card cursor-pointer group relative bg-gray-200 aspect-[4/3]" onclick="openLightbox(6)">
+                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80" 
+                     alt="Participants engaging at check-in counter" 
+                     class="gallery-img w-full h-full object-cover">
+                <div class="absolute inset-0 bg-purple-900 bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                    <i class="fa-solid fa-magnifying-glass-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+                </div>
+            </div>
+
+            <!-- Image Item 8 -->
+            <div class="gallery-card cursor-pointer group relative bg-gray-200 aspect-[4/3]" onclick="openLightbox(7)">
+                <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?auto=format&fit=crop&w=800&q=80" 
+                     alt="Group of students receiving instructions" 
+                     class="gallery-img w-full h-full object-cover">
+                <div class="absolute inset-0 bg-purple-900 bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                    <i class="fa-solid fa-magnifying-glass-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+                </div>
+            </div>
+
+            <!-- Image Item 9 -->
+            <div class="gallery-card cursor-pointer group relative bg-gray-200 aspect-[4/3]" onclick="openLightbox(8)">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80" 
+                     alt="Students registering at Olympic desk" 
+                     class="gallery-img w-full h-full object-cover">
+                <div class="absolute inset-0 bg-purple-900 bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                    <i class="fa-solid fa-magnifying-glass-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full bg-white border-t border-purple-100 py-6 text-center text-xs text-gray-500 mt-12">
+        <p>© 2025 Olympic Toán - Thống Kê. All rights reserved.</p>
+    </footer>
+
+    <!-- Interactive Modal / Lightbox -->
+    <div id="lightbox" class="fixed inset-0 bg-black/90 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm transition-opacity duration-300 opacity-0">
+        <!-- Close Button -->
+        <button onclick="closeLightbox()" class="absolute top-5 right-5 text-white hover:text-purple-400 text-3xl focus:outline-none p-2 z-10 transition-colors">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <!-- Previous Button -->
+        <button onclick="prevImage()" class="absolute left-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white text-3xl bg-black/40 hover:bg-black/70 p-3 rounded-full transition-all">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <!-- Modal Content Container -->
+        <div class="max-w-4xl max-h-[85vh] flex flex-col items-center justify-center">
+            <img id="lightbox-img" src="" alt="Full view" class="max-w-full max-h-[75vh] object-contain rounded-lg shadow-2xl">
+            <p id="lightbox-caption" class="text-white text-center mt-4 text-sm font-medium tracking-wide"></p>
+        </div>
+
+        <!-- Next Button -->
+        <button onclick="nextImage()" class="absolute right-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white text-3xl bg-black/40 hover:bg-black/70 p-3 rounded-full transition-all">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <!-- Scripts for Interactivity -->
+    <script>
+        // Gallery Images Data
+        const galleryItems = [
+            { src: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80", caption: "Góc trưng bày laptop & tài liệu truyền thông" },
+            { src: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80", caption: "Booth truyền thông Olympic Toán - Thống Kê 2025" },
+            { src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80", caption: "Mô hình gỗ ghép chữ TTK độc đáo" },
+            { src: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80", caption: "Quà tặng và các thử thách toán học hấp dẫn" },
+            { src: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80", caption: "Sinh viên hào hứng tham gia trải nghiệm tại booth" },
+            { src: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80", caption: "Trực tiếp thử sức với trò chơi xếp hình không gian" },
+            { src: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80", caption: "Không khí đông vui tại khu vực check-in" },
+            { src: "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?auto=format&fit=crop&w=1200&q=80", caption: "Ban tổ chức hướng dẫn luật chơi cho các bạn sinh viên" },
+            { src: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=80", caption: "Các thí sinh đăng ký tham gia cuộc thi" }
+        ];
+
+        let currentIndex = 0;
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Lightbox Functions
+        function openLightbox(index) {
+            currentIndex = index;
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            const caption = document.getElementById('lightbox-caption');
+
+            img.src = galleryItems[currentIndex].src;
+            caption.textContent = galleryItems[currentIndex].caption;
+
+            lightbox.classList.remove('hidden');
+            setTimeout(() => {
+                lightbox.classList.remove('opacity-0');
+            }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.add('opacity-0');
+            setTimeout(() => {
+                lightbox.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }, 300);
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % galleryItems.length;
+            updateLightboxContent();
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+            updateLightboxContent();
+        }
+
+        function updateLightboxContent() {
+            const img = document.getElementById('lightbox-img');
+            const caption = document.getElementById('lightbox-caption');
+            img.src = galleryItems[currentIndex].src;
+            caption.textContent = galleryItems[currentIndex].caption;
+        }
+
+        // Close on Escape & Arrow navigation
+        document.addEventListener('keydown', (e) => {
+            const lightbox = document.getElementById('lightbox');
+            if (!lightbox.classList.contains('hidden')) {
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowRight') nextImage();
+                if (e.key === 'ArrowLeft') prevImage();
+            }
+        });
+
+        // Close lightbox on clicking outside image
+        document.getElementById('lightbox').addEventListener('click', (e) => {
+            if (e.target.id === 'lightbox') {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html>
