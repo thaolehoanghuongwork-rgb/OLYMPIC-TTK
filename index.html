@@ -1,269 +1,67 @@
-/* =========================
-   CÀI ĐẶT CHUNG
-========================= */
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLYMPIC TOÁN - THỐNG KÊ 2026</title>
+    <!-- Thêm font chữ Montserrat từ Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!-- Header: Chỉ hiển thị logo và thanh điều hướng -->
+<header class="navbar">
+    <a href="#" class="logo-area" aria-label="Olympic Toán - Thống kê">
+        <img
+            src="logo.png"
+            alt="Logo Olympic Toán - Thống kê"
+            class="logo-img"
+        >
+    </a>
 
-html {
-    scroll-behavior: smooth;
-}
+    <nav aria-label="Menu chính">
+        <ul class="nav-links">
+            <li><a href="#fanpage">Fanpage</a></li>
+            <li><a href="#thong-tin">Thông tin</a></li>
+            <li><a href="#lien-he">Liên hệ</a></li>
+            <li><a href="#don-vi">Units</a></li>
+            <li><a href="#ban-tin">Bản tin</a></li>
+        </ul>
+    </nav>
+</header>
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f8f6fb;
-    color: #25232a;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+    <!-- Nội dung chính -->
+    <main class="main-content">
+        <div class="hero-container">
+            <div class="hero-text-box">
+                <h1 class="page-title">
+                    CUỘC THI OLYMPIC TOÁN - THỐNG KÊ NĂM 2026
+                </h1>
+                <!-- Cụm nút bấm -->
+                <div class="action-buttons">
+                    <a href="#dang-ky" class="btn btn-register">ĐĂNG KÝ NGAY</a>
+                    <a href="#gia-ve" class="btn btn-price">10.000 VNĐ/VÉ</a>
+                </div>
+            </div>
 
+            <!-- Poster cuộc thi -->
+            <div class="poster-container">
+                <img
+                    src="poster.jpg"
+                    alt="Poster cuộc thi Olympic Toán - Thống kê năm 2026"
+                    class="poster-img"
+                >
+            </div>
+        </div>
+    </main>
 
-/* =========================
-   HEADER - LOGO VÀ MENU
-========================= */
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 OLYMPIC TOÁN - THỐNG KÊ.</p>
+    </footer>
 
-.navbar {
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 20px 40px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-
-    background-color: #f8f6fb;
-}
-
-.logo-area {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    text-decoration: none;
-    color: inherit;
-    flex-shrink: 0;
-}
-
-.logo-img {
-    width: 160px;
-    height: 160px;
-    object-fit: contain;
-}
-
-
-/* Menu điều hướng */
-
-.nav-links {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 30px;
-
-    list-style: none;
-}
-
-.nav-links a {
-    display: inline-block;
-    padding: 5px 0;
-
-    font-size: 14px;
-    font-weight: 500;
-    color: #2b2830;
-    text-decoration: none;
-
-    transition: color 0.2s ease;
-}
-
-.nav-links a:hover {
-    color: #7439bd;
-}
-
-
-/* =========================
-   NỘI DUNG CHÍNH (LAYOUT 2 CỘT)
-========================= */
-
-.main-content {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 24px;
-    flex: 1;
-    display: flex;
-    align-items: center;
-}
-
-.hero-container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 60px;
-}
-
-.hero-text-box {
-    flex: 1;
-    text-align: left;
-}
-
-.page-title {
-    margin: 0 0 24px;
-
-    font-size: 36px;
-    line-height: 1.35;
-    font-weight: 700;
-    color: #1f1c24;
-}
-
-/* Nút bấm Đăng ký & Giá vé */
-.action-buttons {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
-
-.btn {
-    display: inline-block;
-    padding: 12px 28px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: all 0.2s ease;
-    text-align: center;
-}
-
-.btn-register {
-    background-color: #2b1b4e;
-    color: #ffffff;
-    box-shadow: 0 4px 12px rgba(43, 27, 78, 0.25);
-}
-
-.btn-register:hover {
-    background-color: #3f2870;
-}
-
-.btn-price {
-    background-color: #2b1b4e;
-    color: #ffffff;
-    box-shadow: 0 4px 12px rgba(43, 27, 78, 0.25);
-}
-
-.btn-price:hover {
-    background-color: #3f2870;
-}
-
-
-/* =========================
-   POSTER CUỘC THI
-========================= */
-
-.poster-container {
-    flex: 1;
-    max-width: 420px;
-    margin: 0 auto;
-    background: transparent;
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-.poster-img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    border-radius: 12px;
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-.footer {
-    width: 100%;
-    padding: 20px 16px;
-
-    text-align: center;
-    font-size: 12px;
-    color: #77717e;
-
-    background-color: transparent;
-    border-top: 1px solid #e9e5ed;
-}
-
-.footer p {
-    margin: 0;
-}
-
-
-/* =========================
-   RESPONSIVE - MÁY TÍNH BẢNG & ĐIỆN THOẠI
-========================= */
-
-@media (max-width: 900px) {
-    .hero-container {
-        flex-direction: column;
-        text-align: center;
-        gap: 40px;
-    }
-
-    .hero-text-box {
-        text-align: center;
-    }
-
-    .action-buttons {
-        justify-content: center;
-    }
-
-    .page-title {
-        font-size: 28px;
-    }
-
-    .poster-container {
-        max-width: 350px;
-    }
-}
-
-@media (max-width: 600px) {
-    .navbar {
-        padding: 15px 20px;
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .nav-links {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .nav-links a {
-        font-size: 13px;
-    }
-
-    .page-title {
-        font-size: 22px;
-    }
-
-    .action-buttons {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .btn {
-        width: 100%;
-    }
-
-    .poster-container {
-        max-width: 280px;
-    }
-}
+</body>
+</html>
