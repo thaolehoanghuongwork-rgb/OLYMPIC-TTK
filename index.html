@@ -2,66 +2,185 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OLYMPIC TOÁN - THỐNG KÊ 2026</title>
-    <!-- Thêm font chữ Montserrat từ Google Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> CUỘC THI OLYMPIC TOÁN - THỐNG KÊ NĂM 2026 </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Header: Chỉ hiển thị logo và thanh điều hướng -->
-<header class="navbar">
-    <a href="#" class="logo-area" aria-label="Olympic Toán - Thống kê">
-        <img
-            src="logo.png"
-            alt="Logo Olympic Toán - Thống kê"
-            class="logo-img"
-        >
-    </a>
-
-    <nav aria-label="Menu chính">
+<!-- HEADER -->
+<header class="header">
+    <nav class="navbar">
+        <a href="#" class="logo-area">
+            <img class="logo.png" src="https://thaolehoanghuongwork-rgb.github.io/OLYMPIC-TTK/" alt="Olympic Toán - Thống kê">
+        </a>
         <ul class="nav-links">
-            <li><a href="#fanpage">Fanpage</a></li>
-            <li><a href="#thong-tin">Thông tin</a></li>
-            <li><a href="#lien-he">Liên hệ</a></li>
-            <li><a href="#don-vi">Đơn vị</a></li>
-            <li><a href="#ban-tin">Bản tin</a></li>
+            <li>
+                <a href="#thong-tin">THÔNG TIN ▾</a>
+                <ul class="sub-menu"><li><a href="#noi-dung">NỘI DUNG CUỘC THI</a></li></ul>
+            </li>
+            <li>
+                <a href="#don-vi">ĐƠN VỊ ▾</a>
+                <ul class="sub-menu">
+                    <li><a href="#ban-to-chuc">BAN TỔ CHỨC</a></li>
+                    <li><a href="#ban-co-van">BAN CỐ VẤN</a></li>
+                </ul>
+            </li>
+            <li><a href="#lien-he">LIÊN HỆ</a></li>
+            <li><a href="#ban-tin">BẢN TIN</a></li>
+            <li><a class="btn-fanpage" href="https://www.facebook.com/saytosucceed.hub" target="_blank" rel="noopener">FANPAGE</a></li>
         </ul>
     </nav>
 </header>
 
-    <!-- Nội dung chính -->
-    <main class="main-content">
-        <div class="hero-container">
+<main>
+    <!-- HERO -->
+    <section class="main-content" id="thong-tin">
+        <div class="container hero-container">
             <div class="hero-text-box">
-                <h1 class="page-title">
-                    CUỘC THI OLYMPIC TOÁN - THỐNG KÊ NĂM 2026
-                </h1>
-                <!-- Thêm cụm nút bấm theo hình ảnh mẫu -->
+                <h1 class="page-title"> CUỘC THI OLYMPIC TOÁN - THỐNG KÊ <br> NĂM 2026 </h1>
                 <div class="action-buttons">
-                    <a href="#dang-ky" class="btn btn-register">ĐĂNG KÝ NGAY</a>
-                    <a href="#gia-ve" class="btn btn-price">10.000 VNĐ/VÉ</a>
+                    <a class="btn btn-register" href="https://forms.gle/AjWFLWM3XqDxNeMH9">ĐĂNG KÝ NGAY</a>
+                    <a class="btn btn-price" href="https://forms.gle/AjWFLWM3XqDxNeMH9">20.000 VNĐ/Người</a>
                 </div>
             </div>
-
-            <!-- Poster cuộc thi -->
             <div class="poster-container">
-                <img
-                    src="poster.jpg"
-                    alt="Poster cuộc thi Olympic Toán - Thống kê năm 2026"
-                    class="poster-img"
-                >
+                <img class="poster-img" src="https://hungbiensaytosucceed.com/wp-content/uploads/2026/05/Standee-S2-2026-scaled-e1778329032932-592x1024.jpg" alt="Poster cuộc thi">
             </div>
         </div>
-    </main>
+    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2026 OLYMPIC TOÁN - THỐNG KÊ.</p>
-    </footer>
+    <!-- GIỚI THIỆU -->
+    <section class="about" id="noi-dung">
+        <div class="container about-inner">
+            <div class="about-left">
+                <div class="divider"></div>
+                <h2>SAY TO SUCCEED</h2>
+                <p class="slogan">Nói để thành công</p>
+                <img src="https://hungbiensaytosucceed.com/wp-content/uploads/2023/07/say-to-succed.jpg" alt="Say to Succeed">
+            </div>
+            <div class="about-right">
+                <p>Là hành trình lan toả những giá trị nhân văn đến cộng đồng do CLB Hùng biện Mầm Sống trực thuộc Trường Đại học Ngân hàng TP.HCM tổ chức. Với hình thức thi hùng biện, các bạn Thí sinh sẽ cất lên tiếng nói của mình để nêu lên những nhận định, quan điểm và bày tỏ trăn trở của bản thân về những vấn đề trong cuộc sống.</p>
+                <p>Qua đó các bạn có cơ hội tìm ra, làm ra và giữ được chính mình; cùng với việc khơi gợi và lan tỏa những thông điệp tích cực đến với cộng đồng.</p>
+                <p>Say to Succeed không yêu cầu bạn là người giỏi nhất, chỉ cần bạn chân thành với chính mình.</p>
+            </div>
+        </div>
+    </section>
 
+    <!-- THỐNG KÊ -->
+    <section class="stats">
+        <div class="container stats-inner">
+            <div class="stat-item"><i class="far fa-flag"></i><div class="stat-number" data-to="18000">0</div><div class="stat-title">FOLLOWER FANPAGE</div></div>
+            <div class="stat-item"><i class="fas fa-sign-in-alt"></i><div class="stat-number" data-to="15000">0</div><div class="stat-title">REGISTER</div></div>
+            <div class="stat-item"><i class="fas fa-users"></i><div class="stat-number" data-to="400">0</div><div class="stat-title">ORGANIZATION COMMITTEE</div></div>
+            <div class="stat-item"><i class="fas fa-seedling"></i><div class="stat-number" data-to="15">0</div><div class="stat-title">ORGANIZATION YEAR</div></div>
+        </div>
+    </section>
+
+    <!-- VỮNG TÂM - XÂY TẦM + THÔNG TIN DỰ THI -->
+    <section class="info">
+        <div class="container info-inner">
+            <div class="info-left">
+                <p class="tagline">“VỮNG TÂM – XÂY TẦM”</p>
+                <p>Trong một thế giới đầy biến động và bùng nổ thông tin, khi thành công thường được đong đếm bằng những giá trị ngắn hạn, người trẻ dễ rơi vào trạng thái chao đảo và dần mất đi sự kết nối với chính mình. Hành trình Say to Succeed năm 2026 trở lại với mong muốn đồng hành cùng các bạn học cách <b>“Vững tâm”</b> để giữ chặt một hệ giá trị nội tâm kiên cố, không bị cuốn theo những áp lực hay cám dỗ nhất thời.</p>
+                <p>Từ nền tảng nội lực vững vàng đó, mỗi cá nhân có thể tự tin <b>“Xây tầm”</b> – kiến tạo nên những giá trị thực được cộng đồng đón nhận và xác tín. Bởi lẽ, hành trình trưởng thành không chỉ là sự hoàn thiện cá nhân mà còn là khát khao được chung sống hạnh phúc và bền vững cùng xã hội, nơi mỗi tiếng nói cất lên đều trở thành sức mạnh để lan tỏa sự tử tế đến cộng đồng.</p>
+            </div>
+            <div class="info-right">
+                <div class="info-block">
+                    <h3>THÔNG TIN DỰ THI:</h3>
+                    Đối tượng: Công dân từ 18 – 24 tuổi trên toàn quốc<br>
+                    Thời gian đăng ký dự thi: Từ ngày 09/5/2026 đến hết ngày 22/5/2026<br>
+                    Phí đăng ký: 20.000 VNĐ/vé
+                </div>
+                <div class="info-block">
+                    <h3>CÁCH THỨC DỰ THI:</h3>
+                    <p><strong>OFFLINE:</strong> Mua vé trực tiếp tại bàn bán vé tại Trường Đại học Ngân hàng TP.HCM.</p>
+                    <p><strong>ONLINE:</strong></p>
+                    <ul>
+                        <li>Link đăng ký mua vé dự thi: <a href="https://forms.gle/AjWFLWM3XqDxNeMH9">https://forms.gle/AjWFLWM3XqDxNeMH9</a></li>
+                        <li>Link dự thi Vòng Sơ loại: <a href="https://myaloha.vn/ct/eaXe3b">https://myaloha.vn/ct/eaXe3b</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CA KHÚC -->
+    <section class="song">
+        <div class="container song-inner">
+            <div class="song-text">
+                <h2>CA KHÚC "SAY TO SUCCEED"</h2>
+                <p>Là bài hát chính thức của cuộc thi nhằm lan tỏa những giá trị, tinh thần của cuộc thi đến với người trẻ nói riêng và cộng đồng S2 nói chung.</p>
+            </div>
+            <div class="song-video">
+                <iframe src="https://www.youtube.com/embed/bqWiXlZkycE" title="Ca khúc Say to Succeed" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- THÔNG TIN GIỚI THIỆU -->
+    <section class="intro" id="ban-to-chuc">
+        <div class="container intro-inner">
+            <div class="intro-text">
+                <h2>THÔNG TIN GIỚI THIỆU</h2>
+                <p>Hành trình “SAY TO SUCCEED – NÓI ĐỂ THÀNH CÔNG”</p>
+                <p>do CLB Hùng biện Mầm Sống và CLB Phát Thanh đồng sáng lập. Hiện thời do CLB Hùng biện Mầm Sống Trường Đại học Ngân hàng TP.HCM tổ chức.</p>
+            </div>
+            <img src="https://hungbiensaytosucceed.com/wp-content/uploads/2023/07/say-to-succed.jpg" alt="Say to Succeed">
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer" id="lien-he">
+    <div class="container footer-inner">
+        <div>
+            <img class="footer-logo" src="https://hungbiensaytosucceed.com/wp-content/uploads/2023/07/say-to-succed.jpg" alt="Say to Succeed">
+            <h4>MẠNG XÃ HỘI</h4>
+            <div class="socials">
+                <a href="https://www.facebook.com/saytosucceed.hub" target="_blank" rel="noopener"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://www.tiktok.com/@hungbien_mamsong" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i> TikTok</a>
+                <a href="https://www.youtube.com/@CuocthiHungbienSaytoSucceed" target="_blank" rel="noopener"><i class="fab fa-youtube"></i> YouTube</a>
+            </div>
+        </div>
+        <div>
+            <h4>THÔNG TIN LIÊN HỆ</h4>
+            <ul>
+                <li>Email: olympictoanthongke@gmail.com</li>
+                <li>Mr. Quang Anh (Trưởng BTC): 0845.250.805</li>
+                <li>Địa chỉ: Đại học Kinh tế TP. Hồ Chí Minh, Phường Diên Hồng, TP.HCM</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <p>© 2026 Cuộc thi Olympic Toán - Thống kê</p>
+    </div>
+</footer>
+
+<script>
+// Hiệu ứng đếm số khi cuộn tới khu vực thống kê
+(function () {
+    var items = document.querySelectorAll('.stat-number');
+    var started = false;
+    function run() {
+        items.forEach(function (el) {
+            var to = +el.dataset.to, t0 = null, dur = 2000;
+            function step(ts) {
+                if (!t0) t0 = ts;
+                var p = Math.min((ts - t0) / dur, 1);
+                el.textContent = Math.floor(p * to).toLocaleString('en-US');
+                if (p < 1) requestAnimationFrame(step);
+            }
+            requestAnimationFrame(step);
+        });
+    }
+    new IntersectionObserver(function (entries, obs) {
+        if (entries[0].isIntersecting && !started) { started = true; run(); obs.disconnect(); }
+    }, { threshold: 0.4 }).observe(document.querySelector('.stats'));
+})();
+</script>
 </body>
 </html>
