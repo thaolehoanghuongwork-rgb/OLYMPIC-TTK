@@ -1,49 +1,103 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f7f6;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9fb;
+    color: #222;
+}
+
+/* Thanh Menu */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    height: 45px;
+    width: auto;
+}
+
+.logo-text {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #111;
+    letter-spacing: 1px;
+}
+
+.logo-text span {
+    display: block;
+    font-size: 0.75rem;
+    color: #555;
+    font-weight: normal;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
     color: #333;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #0055a5;
+}
+
+/* Phần nội dung trang chủ */
+.main-content {
     text-align: center;
+    padding: 2.5rem 1rem;
 }
 
-header {
-    background-color: #003366;
-    color: white;
-    padding: 2rem 1rem;
+.page-title {
+    font-size: 1.8rem;
+    color: #222;
+    margin-bottom: 2rem;
+    font-weight: 600;
 }
 
-main {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-}
-
-.card {
-    background: white;
-    padding: 2rem;
+.poster-container {
+    max-width: 650px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 10px;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
-button {
-    background-color: #0066cc;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s;
+.poster-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
 }
 
-button:hover {
-    background-color: #004999;
-}
-
+/* Footer */
 footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #222;
+    color: #aaa;
+    font-size: 0.85rem;
     margin-top: 3rem;
-    padding: 1rem;
-    background-color: #e0e0e0;
-    font-size: 0.9rem;
 }
