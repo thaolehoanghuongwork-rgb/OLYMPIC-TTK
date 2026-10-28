@@ -297,3 +297,162 @@ body {
         max-width: 280px;
     }
 }
+/* =========================
+   SECTION THỐNG KÊ (STATS)
+========================= */
+
+.stats-section {
+    width: 100%;
+    background-color: #121018; /* Nền tối nhám */
+    padding: 50px 20px;
+    border-bottom: 1px solid #231f2d;
+}
+
+.stats-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.stat-item {
+    text-align: center;
+    color: #ffffff;
+    flex: 1;
+    min-width: 200px;
+}
+
+.stat-icon {
+    font-size: 28px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.stat-number {
+    font-size: 32px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 6px;
+    letter-spacing: 1px;
+}
+
+.stat-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #d4af37; /* Màu vàng kim sang trọng */
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+
+/* =========================
+   SECTION THÔNG TIN 2 CỘT
+========================= */
+
+.info-section {
+    width: 100%;
+    background-color: #0b0910; /* Nền đen nhám */
+    color: #cccccc;
+    padding: 60px 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.info-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+/* Cột trái */
+.info-left {
+    flex: 1.2;
+}
+
+.slogan-title {
+    color: #d4af37;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.info-left p {
+    font-size: 13.5px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+    color: #dddddd;
+    text-align: justify;
+}
+
+.info-left strong {
+    color: #ffffff;
+}
+
+/* Cột phải */
+.info-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.block-title {
+    color: #d4af37;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.info-block p {
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 8px;
+    color: #e0e0e0;
+}
+
+.link-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 6px;
+}
+
+.link-list li {
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 8px;
+    color: #e0e0e0;
+}
+
+.link-list a {
+    color: #d4af37;
+    text-decoration: underline;
+    word-break: break-all;
+}
+
+.link-list a:hover {
+    color: #ffffff;
+}
+
+
+/* RESPONSIVE CHO MÀN HÌNH NHỎ */
+@media (max-width: 900px) {
+    .info-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .info-left p {
+        text-align: left;
+    }
+
+    .stats-container {
+        gap: 25px;
+    }
+}
